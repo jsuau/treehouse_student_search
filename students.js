@@ -44,11 +44,14 @@ console.log(students[0].name);
 for (i = 0; i <= students.length; i ++) {
   console.log(students[i].name);
   
-  if (student == students[0].name) {
+  if (student == students[i].name) {
   console.log("yes");
-  } else {
-  console.log("no");
+   break;
+  
+} else {
+console.log("no");
 }
+  
 }
 
 
