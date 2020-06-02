@@ -1,33 +1,51 @@
 var students = [ 
   { 
-   name: 'Pablo',
-    track: 'R',
+   name: 'Dave',
+    track: 'Front End Development',
     achievements: 158,
     points: 14730
   },
   {
-    name: 'Joanna',
-    track: 'Front End Development',
-    achievements: 175,
-    points: 16374
+    name: 'Jody',
+    track: 'iOS Development with Swift',
+    achievements: '175',
+    points: '16375'
   },
   {
-    name: 'Daniel',
+    name: 'Jordan',
+    
     track: 'PHP Development',
-    achievements: 55,
-    points: 2025
+    achievements: '55',
+    points: '2025'
   },
   {
-    name: 'Laura',
+    name: 'John',
     track: 'Learn WordPress',
-    achievements: 40,
-    points: 1950
+    achievements: '40',
+    points: '1950'
   },
   {
-    name: 'Negura',
+    name: 'Trish',
     track: 'Rails Development',
-    achievements: 5,
-    points: 350
+    achievements: '5',
+    points: '350'
   }
 ];
 
+// prompt for a student name
+
+const student = prompt("Type here the name of the student");
+
+//search for the student
+
+console.log(student);
+console.log(students[0].name);
+
+for (i = 0; i <= students.length; i ++) {
+  console.log(students[i].name);
+}
+
+
+
+
+//if student exists, fetch their course data
