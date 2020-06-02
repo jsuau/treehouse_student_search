@@ -44,7 +44,7 @@ console.log(students[0].name);
 for (i = 0; i <= students.length; i ++) {
   console.log(students[i].name);
   
-  if (student == students[i].name) {
+  if (student.toUpperCase == students[i].name.toUpperCase) {
   console.log("yes");
    break;
   
