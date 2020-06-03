@@ -32,6 +32,12 @@ var students = [
 ];
 
 let i = students.length;
+let html = '';
+
+function print(message) {
+  let divOutput = document.getElementById('output');
+  divOutput.innerHTML = message;
+}
 
 // prompt for a student name
 
@@ -45,7 +51,11 @@ while (i >= students.length) {
   for (i = 0; i < students.length; i ++) {
     
     if (student.toUpperCase() === students[i].name.toUpperCase()) {
-    console.log(students[i].name);
+      html += '<h2>' + students[i].name + '</h2>';
+      html += '<p>' + 'Track: ' + students[i].track + '</p>';
+      html += '<p>' + 'Achievements: ' + students[i].achievements + '</p>';
+      html += '<p>' + 'Points: ' + students[i].points + '</p>';
+      print(html);
     break;
       
     } 
