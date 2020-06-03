@@ -43,7 +43,7 @@ function print(message) {
 
 while (i >= students.length) {
 
-  const student = prompt("Type here the name of the student");
+  let student = prompt("Type here the name of the student. To close the dialog box type in 'quit'.");
   student.toUpperCase();
   
   //search for the student
@@ -56,9 +56,11 @@ while (i >= students.length) {
       html += '<p>' + 'Achievements: ' + students[i].achievements + '</p>';
       html += '<p>' + 'Points: ' + students[i].points + '</p>';
       print(html);
-    break;
+      break;
       
-    } 
+    } if (student === 'quit') {
+        break;
+    }
   
   }
 
