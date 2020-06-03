@@ -1,60 +1,62 @@
 var students = [ 
   { 
-   name: 'Dave',
-    track: 'Front End Development',
+   name: 'Pablo',
+    track: 'R',
     achievements: 158,
     points: 14730
   },
   {
-    name: 'Jody',
-    track: 'iOS Development with Swift',
-    achievements: '175',
-    points: '16375'
+    name: 'Joanna',
+    track: 'Front End Development',
+    achievements: 175,
+    points: 16375
   },
   {
-    name: 'Jordan',
-    
+    name: 'Daniel',
     track: 'PHP Development',
-    achievements: '55',
-    points: '2025'
+    achievements: 55,
+    points: 2025
   },
   {
-    name: 'John',
+    name: 'Laura',
     track: 'Learn WordPress',
-    achievements: '40',
-    points: '1950'
+    achievements: 40,
+    points: 1950
   },
   {
-    name: 'Trish',
+    name: 'Negura',
     track: 'Rails Development',
-    achievements: '5',
-    points: '350'
+    achievements: 5,
+    points: 350
   }
 ];
 
+let i = students.length;
+
 // prompt for a student name
 
-const student = prompt("Type here the name of the student");
+while (i >= students.length) {
 
-//search for the student
-
-console.log(student);
-console.log(students[0].name);
-
-for (i = 0; i <= students.length; i ++) {
-  console.log(students[i].name);
+  const student = prompt("Type here the name of the student");
+  student.toUpperCase();
   
-  if (student.toUpperCase == students[i].name.toUpperCase) {
-  console.log("yes");
-   break;
+  //search for the student
   
-} else {
-console.log("no");
+  for (i = 0; i < students.length; i ++) {
+    
+    if (student.toUpperCase() === students[i].name.toUpperCase()) {
+    console.log(students[i].name);
+    break;
+      
+    } 
+  
+  }
+
 }
-  
-}
+
 
 
 
 
 //if student exists, fetch their course data
+
